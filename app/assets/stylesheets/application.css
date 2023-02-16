@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.fa-hand-o-right {
+  animation: moveHand 2s infinite;
+}
+
+@keyframes moveHand {
+  0% {
+    transform: translateX(-25px);
+  }
+
+  50% {
+    transform: translateX(50px) translateY(0);
+  }
+
+  100% {
+    transform: translateX(-25px);
+  }
+}
+
+@media (min-width: 768px) { /* target screen sizes above 768px (PC) */
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) { /* target screen sizes below 7681px (mobile) */
+  .navbar-nav {
+    display: flex;
+    align-items: start;
+  }
+}
+
+.fooods {
+  width: 80%;
+}
+
+.fooods p {
+  width: 25%;
+  margin: 0;
+}
+
+.fooods_title h5 {
+  width: 20%;
+}
+
+.foods {
+  width: 75%;
+}
+
+.foods_title,
+.fooods_title {
+  color: rgba(44, 29, 0, 0.418);
+  width: 100%;
+}
+
+.foods p {
+  width: 33.33%;
+  margin: 0;
+}
+
+.foods_title h5 {
+  width: 25%;
+}
+
+.form-check,
+.form-check-input {
+  cursor: pointer;
+}
+
+.border-none {
+  border: none !important;
+}
