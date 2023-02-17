@@ -21,6 +21,7 @@ test:
 
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: ROR_Recipe_App_production
   # username: ROR_Recipe_App
  
