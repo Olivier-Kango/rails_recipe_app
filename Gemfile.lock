@@ -102,13 +102,8 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.5.0)
-    dotenv (2.8.1)
-    dotenv-rails (2.8.1)
-      dotenv (= 2.8.1)
-      railties (>= 3.2)
     erubi (1.12.0)
     execjs (2.8.1)
-    ffi (1.15.5)
     ffi (1.15.5-x64-mingw-ucrt)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -149,14 +144,11 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.14.1-x64-mingw-ucrt)
       racc (~> 1.4)
-    nokogiri (1.14.1-x86_64-linux)
-      racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.4.5)
     pg (1.4.5-x64-mingw-ucrt)
     popper_js (2.11.6)
     public_suffix (5.0.1)
-    puma (5.0.4)
+    puma (5.6.5)
       nio4r (~> 2.0)
     racc (1.6.2)
     rack (2.2.6.2)
@@ -226,7 +218,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    spring (4.1.1)
     sprockets (4.2.0)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -268,7 +259,6 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
-  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -277,15 +267,13 @@ DEPENDENCIES
   capybara
   debug
   devise
-  dotenv-rails
   importmap-rails
   jbuilder
   pg (~> 1.1)
-  puma (~> 5.0.0)
+  puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.2)
   rspec-rails
   selenium-webdriver
-  spring
   sprockets-rails
   stimulus-rails
   turbo-rails
