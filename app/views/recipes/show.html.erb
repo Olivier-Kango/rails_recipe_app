@@ -1,11 +1,11 @@
-<div class="container bg-warning rounded-top p-4 mb-4">
+<div class="container bg-warning rounded p-4 mb-4">
   <div class="d-flex">
     <div>
       
     </div>
     <div class="ms-auto m-1 order-last">
       <h3><%= link_to recipes_path, class: 'text-decoration-none color-dark', data: { turbo: false } do %>
-        <span aria-hidden="true">&times;</span>
+        <span aria-hidden="true" class="text-white bg-danger rounded px-3 pb-1">&times;</span>
       <% end %></h3>
     </div>
   </div>
